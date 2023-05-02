@@ -59,7 +59,7 @@ apt update && apt install curl sudo git -y && curl -Of https://raw.githubusercon
 * Site: [OpeNode.RU](https://openode.ru)
 
 # Скриншоты
-https://raw.githubusercontent.com/iganeshk/adwireguard-dark/assets/screenshot-adwireguard.png?v1![image](https://user-images.githubusercontent.com/50312583/235726181-ff1307ae-2c5b-4cd2-a46b-ea600d7a9845.png)
+https://raw.githubusercontent.com/iganeshk/adwireguard-dark/assets/screenshot-adwireguard.png?v1![image](https://user-images.githubusercontent.com/50312583/235726290-5b269725-7692-44ee-a7ff-f191bf895f6f.png)
 
 
 ## После установки
