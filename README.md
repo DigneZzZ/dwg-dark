@@ -1,8 +1,11 @@
 # DWG UI - Docker WireGuard (DWG) - Проект одного скрипта 
 <img src="https://user-images.githubusercontent.com/50312583/231138618-750b4b04-ade0-4e67-852e-f103030684a9.png" width="400">
 ### Представляю вам лучшую сборку для самой быстрой настройки VPN сервера на WireGuard
+
 ### **DWG-DARK** = AdGuard with DoH DNS +  Wireguard with UI (wg-easy) + Unbound 
-### Adguard и WG-easy объединены в один контейнер, **теперь в AGH отображается каждый клиент!**.
+
+### Adguard и WG-easy объединены в один контейнер, **теперь в AGH отображается каждый клиент!**
+
 Тема поддержки на моём форуме:
 https://openode.ru/topic/116-dwg-ui/
 
