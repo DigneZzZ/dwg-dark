@@ -7,7 +7,7 @@
 ### Adguard и WG-easy объединены в один контейнер, **теперь в AGH отображается каждый клиент!**
 
 Тема поддержки на моём форуме:
-https://openode.ru/topic/116-dwg-ui/
+https://openode.ru/
 
 Версия без UI: https://github.com/DigneZzZ/dwg-cli
 ### [ENGLISH DOCS](https://github.com/DigneZzZ/dwg-ui/blob/main/README_EN.md)
