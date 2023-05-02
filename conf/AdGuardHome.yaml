@@ -37,7 +37,7 @@ dns:
     - https://dns.quad9.net/dns-query
   upstream_dns_file: ""
   bootstrap_dns:
-    - 10.2.0.200
+    - 10.10.1.3
   all_servers: false
   fastest_addr: false
   fastest_timeout: 1s
@@ -74,17 +74,13 @@ dns:
   safesearch_cache_size: 1048576
   parental_cache_size: 1048576
   cache_time: 30
-  rewrites:
-    - domain: wg.local
-      answer: 10.2.0.3
-    - domain: agh.local
-      answer: 10.2.0.100
+  rewrites: []
   blocked_services: []
   upstream_timeout: 10s
   private_networks: []
   use_private_ptr_resolvers: true
   local_ptr_upstreams:
-    - 10.2.0.200
+    - 10.10.1.3
   use_dns64: false
   dns64_prefixes: []
   serve_http3: false
