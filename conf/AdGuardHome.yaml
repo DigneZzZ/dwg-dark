@@ -37,7 +37,7 @@ dns:
     - https://dns.quad9.net/dns-query
   upstream_dns_file: ""
   bootstrap_dns:
-    - 10.10.1.3
+    - 10.2.0.200
   all_servers: false
   fastest_addr: false
   fastest_timeout: 1s
@@ -80,7 +80,7 @@ dns:
   private_networks: []
   use_private_ptr_resolvers: true
   local_ptr_upstreams:
-    - 10.10.1.3
+    - 10.2.0.200
   use_dns64: false
   dns64_prefixes: []
   serve_http3: false
