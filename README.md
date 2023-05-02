@@ -59,12 +59,7 @@ apt update && apt install curl sudo git -y && curl -Of https://raw.githubusercon
 * Site: [OpeNode.RU](https://openode.ru)
 
 # Скриншоты
-## Wireguard-Easy Web-UI
-![image](https://user-images.githubusercontent.com/50312583/206703310-3bc8f759-91fa-42db-8d43-eca0050c70bf.png)
-
-## Adguard Web-UI
-![image](https://user-images.githubusercontent.com/50312583/206703207-f3bd39f1-72c7-458c-9893-ad2126a0d47b.png)
-
+https://raw.githubusercontent.com/iganeshk/adwireguard-dark/assets/screenshot-adwireguard.png?v1![image](https://user-images.githubusercontent.com/50312583/235726181-ff1307ae-2c5b-4cd2-a46b-ea600d7a9845.png)
 
 
 ## После установки
