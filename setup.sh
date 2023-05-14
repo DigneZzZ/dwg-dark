@@ -11,6 +11,23 @@ printf "\e[42mУстановка Git...\e[0m\n"
 apt install git -y
 printf "\e[42mGit успешно установлен.\e[0m\n"
 
+  printf "Для корректной работы данной сборки необходимо освободить 53 порт. Сделать это автоматическим скриптом? Гарантий работоспособности на вашей операционной системе мы не даем?? (Y/n) (по умолчанию - Y, можете нажать Enter): "
+read choice_resolv
+
+  if [[ $choice_resolv == "" || $choice_resolv == "Y" || $choice_resolv == "y" ]]; then
+    sh -c 'echo DNSStubListener=no >> /etc/systemd/resolved.conf' && systemctl restart systemd-resolved.service
+    systemctl stop systemd-resolved.service &&
+    rm -f /etc/resolv.conf &&
+    ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf &&
+    systemctl start systemd-resolved.service
+    printf "\e[42mИмзенения в систему внесены. Но если установка контейнера завершится с ошибок, вам необходимо перезапустить сервер.\e[0m\n"
+    printf "\e[42mВыполнение скрипта будет продолжено в любом случае через 5 секунд\e[0m\n"
+    sleep 5
+  else
+    printf "Скрипт не будет запущен.\n"
+    exit 1
+  fi
+
 # Клонирование репозитория
 printf "\e[42mКлонирование репозитория dwg-dark...\e[0m\n"
 git clone https://github.com/dignezzz/dwg-dark.git temp
@@ -53,6 +70,15 @@ printf "\e[42mПрава на директорию tools успешно уста
 printf "\e[42mЗапуск скрипта ssh.sh для смены стандартного порта SSH...\e[0m\n"
 ./tools/ssh.sh
 printf "\e[42mСкрипт ssh.sh успешно выполнен.\e[0m\n"
+
+  printf "Хотите запустить скрипт wg-ru.sh для русификации и модернизации интерфейса?? (Y/n) (по умолчанию - Y, можете нажать Enter): "
+read choice_ru
+
+  if [[ $choice_ru == "" || $choice_ru == "Y" || $choice_ru == "y" ]]; then
+    ./tools/wg-ru.sh
+  else
+    printf "Скрипт не будет запущен.\n"
+  fi
 
 # Запуск скрипта ufw.sh
 printf "\e[42mЗапуск скрипта ufw.sh для установки UFW Firewall...\e[0m\n"
