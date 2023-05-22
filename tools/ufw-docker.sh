@@ -48,5 +48,5 @@ sudo ufw --force enable
   printf "${GREEN}Включили....${NC}\n"
   printf "${YELLOW}***********************${NC}\n"
     printf "${RED}Теперь веб-интерфейс будет доступен только по адресу (ТОЛЬКО ПРИ ПОДКЛЮЧЕНИИ ЧЕРЕЗ WIREGUARD!):${NC}\n"
-      printf "${BLUE}http://10.2.0.3:51821${NC}\n"
+      printf "${BLUE}http://10.2.0.100:51821${NC}\n"
         printf "${YELLOW}***********************${NC}\n"
