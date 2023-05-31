@@ -41,6 +41,7 @@ for file_path in "${files[@]}"; do
         sed -i "s|>WireGuard<\/span>|>WireGuard -- Адрес: $ip_address Страна: $country_f<\/span>|" "$file_path"
         sed -i "s|>Clients<|>Клиенты<|" "$file_path"
         sed -i "s|>New<|>Новый клиент<|" "$file_path"
+        sed -i "s|There are no clients yet.|Клиенты ещё добавлены! Создайте!|" "$file_path"
         sed -i "s|>New Client<|>Новый клиент<|" "$file_path"
         sed -i 's#https://github.com/sponsors/WeeJeWel#https://yoomoney.ru/to/41001707910216#g' "$file_path"
         sed -i 's#href="https://github.com/weejewel/wg-easy" target="_blank">GitHub#href="https://openode.ru" target="_blank">ReCreated by OpeNode.ru#g' "$file_path"
