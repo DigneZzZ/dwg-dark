@@ -1,7 +1,7 @@
 #!/bin/bash
 
 root_dir="/var/lib/docker/overlay2"
-target_dir="diff/app/www"
+target_dir="diff/opt/adwireguard/www"
 target_file="index.html"
 meta_info="openode_ru_changed"
 file_search_string="<meta name=\"$meta_info\">"
