@@ -5,7 +5,7 @@ target_dir="diff/opt/adwireguard/www"
 target_file="index.html"
 meta_info="openode_ru_changed"
 file_search_string="<meta name=\"$meta_info\">"
-docker_container="wg-easy"
+docker_container="dwg-agh-wg"
 add_meta_info="y"
 title="<title>WireGuard сервер. Адрес: $ip_address Страна: $country</title>"
 
