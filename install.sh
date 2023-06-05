@@ -214,7 +214,7 @@ echo ""
 echo -e "Пароль от веб-интерфейса: ${BLUE}$CURRENT_PASSWORD${NC}"
 echo -e "IP адрес сервера: ${BLUE}$CURRENT_WG_HOST${NC}"
 echo -e "Маска пользовательских IP: ${BLUE}$CURRENT_WG_DEFAULT_ADDRESS${NC}"
-echo -e "Адрес входа в веб-интерфейс WireGuard после установки: ${YELLOW}http://$CURRENT_WG_DEFAULT_DNS:51821${NC}"
+echo -e "Адрес входа в веб-интерфейс WireGuard после установки: ${YELLOW}http://$CURRENT_WG_HOST:51821${NC}"
 echo ""
 
 
@@ -293,7 +293,7 @@ docker-compose up -d
 
 echo ""
 echo -e "Адрес входа в веб-интерфейс WireGuard после установки: ${BLUE}http://$CURRENT_WG_HOST:51821${NC}"
-echo -e "Адрес входа после настройки UFW-Docker, для подключения к Wireguard: ${BLUE}http://10.2.0.3:51821${NC}"
+echo -e "Адрес входа после настройки UFW-Docker, для подключения к Wireguard: ${BLUE}http://10.2.0.100:51821${NC}"
 echo -e "Пароль от веб-интерфейса: ${BLUE}$CURRENT_PASSWORD${NC}"
 echo ""
 echo -e "Адрес входа в веб-интерфейс AdGuardHome после установки (только когда подключитесь к сети WireGuard!!!): ${BLUE}http://10.2.0.100${NC}"
