@@ -38,7 +38,9 @@ ufw-docker install
   printf "${GREEN}Ставим ufw-docker${NC}\n"
 # Разрешаем трафик на порт 51821 для сети 10.10.10.0/24
 sudo ufw route allow proto tcp from 10.10.10.0/24 to any port 51821
-  printf "${GREEN}Разрешаем трафик на порт 51821 только для внутренней сети докера${NC}\n"
+printf "${GREEN}Разрешаем трафик на порт 51821 только для внутренней сети докера${NC}\n"
+sudo ufw route allow proto tcp from 10.10.10.0/24 to any port 80
+printf "${GREEN}Разрешаем трафик на порт 51821 только для внутренней сети докера${NC}\n"
 # Отключаем ufw
 sudo ufw disable
   printf "${GREEN}Выключили...${NC}\n"
