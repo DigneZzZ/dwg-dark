@@ -11,9 +11,9 @@ https://openode.ru/
 
 #### `change.sh` - файл для смены пароля в AdGuardHome
 
-Версия без UI: https://github.com/DigneZzZ/dwg-cli
-Версия UI: https://github.com/DigneZzZ/dwg-ui
-Универсальная версия установки: https://github.com/DigneZzZ/dwg
+* Версия без UI: https://github.com/DigneZzZ/dwg-cli
+* Версия UI: https://github.com/DigneZzZ/dwg-ui
+* Универсальная версия установки: https://github.com/DigneZzZ/dwg
 
 ### [ENGLISH DOCS - Старая версия](https://github.com/DigneZzZ/dwg-ui/blob/main/README_EN.md)
 
