@@ -9,8 +9,10 @@
 Тема поддержки на моём форуме:
 https://openode.ru/
 
+#### `change.sh` - файл для смены пароля в AdGuardHome
+
 Версия без UI: https://github.com/DigneZzZ/dwg-cli
-### [ENGLISH DOCS](https://github.com/DigneZzZ/dwg-ui/blob/main/README_EN.md)
+### [ENGLISH DOCS - Старая версия](https://github.com/DigneZzZ/dwg-ui/blob/main/README_EN.md)
 
 # Требования
 * Чистый пустой сервер.
